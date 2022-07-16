@@ -1,6 +1,6 @@
 package searching.binarySearch;
 
-public class Iterative {
+public class IterativeBinarySearch {
     public static int binarySearchIterative(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;

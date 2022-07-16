@@ -1,6 +1,6 @@
 package searching.binarySearch;
 
-public class Recursive {
+public class RecursiveBinarySearch {
     public static int binarySearchRecursive(int[] arr, int start, int end, int target) {
         if (start > end) {
             return -1;
