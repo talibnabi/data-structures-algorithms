@@ -1,2 +1,2 @@
 # algorithms
-All of algorithms
+List of algorithms
