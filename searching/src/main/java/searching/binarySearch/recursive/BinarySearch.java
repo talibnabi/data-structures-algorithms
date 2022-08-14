@@ -1,6 +1,7 @@
 package searching.binarySearch.recursive;
 
 public class BinarySearch {
+
     private int binarySearch(int[] arr, int left, int right, int element) {
         if (right >= left) {
             int mid = left + (right - left) / 2;
