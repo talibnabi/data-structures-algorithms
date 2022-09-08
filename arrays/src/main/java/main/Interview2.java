@@ -4,7 +4,7 @@ public class Interview2 {
 
 
     public static void main(String[] args) {
-        int area = largestContainer(new int[]{2, 9, 1, 2, 5});
+        int area = largestContainer(new int[]{1, 2, 3, 4, 5});
         System.out.println(area);
     }
 
