@@ -1,10 +1,10 @@
 package main;
 
-public class Math2 {
+public class Interview1 {
 
     public static void main(String[] args) {
         String text = "12345";
-        int num = Math2.parseInt(text);
+        int num = Interview1.parseInt(text);
         System.out.println(num);
     }
 
