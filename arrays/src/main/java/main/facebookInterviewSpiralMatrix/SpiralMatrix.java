@@ -8,24 +8,23 @@ public class SpiralMatrix {
 
     private static void sprintSpiral(int[][] array) {
         int firstRow = 0;
-        int lastRow = array.length;
+        int lastRow = array.length - 1;
         int firstCol = 0;
-        int lastCol = array[0].length;
+        int lastCol = array[0].length - 1;
         while (firstRow < lastRow && firstCol < lastCol) {
-            //up
-            for (int i = firstCol; i < lastCol; i++) {
+            for (int i = firstCol; i <= lastCol; i++) {
                 System.out.print(array[firstRow][i] + " ");
             }
             System.out.println();
-            for (int i = firstRow + 1; i < lastRow; i++) {
-                System.out.print(array[i][lastCol - 1] + " ");
+            for (int i = firstRow + 1; i <= lastRow; i++) {
+                System.out.print(array[i][lastCol] + " ");
             }
             System.out.println();
-            for (int i = lastCol - 2; i > firstCol - 1; i--) {
-                System.out.print(array[lastRow - 1][i] + " ");
+            for (int i = lastCol - 1; i >= firstCol; i--) {
+                System.out.print(array[lastRow][i] + " ");
             }
             System.out.println();
-            for (int i = lastRow - 2; i > firstCol; i--) {
+            for (int i = lastRow - 1; i >= firstRow + 1; i--) {
                 System.out.print(array[i][firstCol] + " ");
             }
             System.out.println();
