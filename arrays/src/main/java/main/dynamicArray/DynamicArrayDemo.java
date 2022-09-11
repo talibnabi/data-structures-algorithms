@@ -10,6 +10,9 @@ public class DynamicArrayDemo {
         dynamicArray.put(434);
         dynamicArray.put(3);
         dynamicArray.put(23);
+        for (int i = 0; i < dynamicArray.getSize(); i++) {
+            System.out.println(dynamicArray.get(i));
+        }
         System.out.println(dynamicArray.length());
         System.out.println(dynamicArray.getSize());
     }

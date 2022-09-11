@@ -8,7 +8,6 @@ package main.dynamicArray;
 import java.util.Arrays;
 
 public class DynamicArray<T> {
-
     private T[] data;
     private int size;
 
@@ -17,29 +16,29 @@ public class DynamicArray<T> {
         data = (T[]) new Object[1];
     }
 
-    public int getSize() {
-        return this.data.length;
-    }
-
-    public int length() {
-        return this.size;
-    }
-
     public T get(int index) {
         return data[index];
     }
 
-    public void put(T element) {
-        ensureCapacity(size + 1);
-        data[size++] = element;
+    public int getSize() {
+        return size;
     }
 
-    private void ensureCapacity(int minCapacity) {
-        int oldCapacity = getSize();
-        if (minCapacity > oldCapacity) {
+    public int length() {
+        return data.length;
+    }
+
+    public void put(T object) {
+        ensureCapacity(size + 1);
+        data[size++] = object;
+    }
+
+    public void ensureCapacity(int capacity) {
+        int oldCapacity = length();
+        if (capacity > oldCapacity) {
             int newCapacity = oldCapacity * 2;
-            if (newCapacity < minCapacity) {
-                newCapacity = minCapacity;
+            if (newCapacity < capacity) {
+                newCapacity = capacity;
             }
             data = Arrays.copyOf(data, newCapacity);
         }
