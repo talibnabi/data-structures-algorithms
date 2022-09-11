@@ -13,7 +13,7 @@ public class SpiralMatrix {
         int lastCol = array[0].length;
         while (firstRow < lastRow && firstCol < lastCol) {
             //up
-            for (int i = firstCol; i <= lastCol - 1; i++) {
+            for (int i = firstCol; i < lastCol; i++) {
                 System.out.print(array[firstRow][i] + " ");
             }
             System.out.println();
@@ -28,6 +28,7 @@ public class SpiralMatrix {
             for (int i = lastRow - 2; i > firstCol; i--) {
                 System.out.print(array[i][firstCol] + " ");
             }
+            System.out.println();
             firstRow++;
             lastRow--;
             firstCol++;

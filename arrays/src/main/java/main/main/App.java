@@ -1,4 +1,4 @@
-package main;
+package main.main;
 
 public class App {
     //Code complexity -> Big-O,Omega,Theta
