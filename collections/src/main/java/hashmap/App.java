@@ -1,5 +1,6 @@
 package hashmap;
 
+import javax.crypto.spec.PSource;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -10,6 +11,9 @@ public class App {
         hashMap.put(1, "Ramiz");
         hashMap.put(4, "Turan");
         hashMap.put(1, "Anara");
+        hashMap.forEach((key, value) -> {
+            System.out.println(key + "." + value);
+        });
 //        System.out.println(hashMap.size());
 //        System.out.println(hashMap);
 //        for (int i = 0; i < hashMap.size(); i++) {
