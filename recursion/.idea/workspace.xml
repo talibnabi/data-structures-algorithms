@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc63f026-c4e8-4959-a83b-1cc16698d11f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/recursion/App2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/recursion/recursion/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/recursion/recursion/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursion/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursion/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +35,7 @@
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.App2">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="recursion.App" />
       <module name="recursion" />
@@ -67,8 +64,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App2" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.App2" />
       </list>
     </recent_temporary>
   </component>
@@ -80,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663002974831</updated>
-      <workItem from="1663002976369" duration="2804000" />
+      <workItem from="1663002976369" duration="5195000" />
     </task>
     <servers />
   </component>
