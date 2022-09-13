@@ -7,7 +7,7 @@ public class App {
     }
 
     //Stack Call Back (4,3,2,1,0 return)
-    public static void solution(int N) {
+    private static void solution(int N) {
         if (N <= 0) {
             return;
         }
