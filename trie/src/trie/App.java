@@ -41,16 +41,16 @@ public class App {
     private static Trie buildTrie(String[] wordDB) {
         Trie root = new Trie(' ');
         for (String word : wordDB) {
-            Trie current = root;
+            Trie currentRoot = root;
             for (int i = 0; i < word.length(); i++) {
                 char c = word.charAt(i);
-                if (!current.child.containsKey(c)) {
+                if (!currentRoot.child.containsKey(c)) {
                     Trie newRoot = new Trie(c);
-                    current.child.put(c, newRoot);
+                    currentRoot.child.put(c, newRoot);
                 }
-                current = current.child.get(c);
+                currentRoot = currentRoot.child.get(c);
             }
-            current.word = word;
+            currentRoot.word = word;
         }
         return root;
     }

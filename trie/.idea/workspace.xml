@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd4a88db-e452-4ca8-866f-f50ed5841526" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/trie/trie/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trie/Trie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trie/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trie/App.java" afterDir="false" />
     </list>
@@ -69,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663066187187</updated>
-      <workItem from="1663066188824" duration="5615000" />
+      <workItem from="1663066188824" duration="11245000" />
     </task>
     <servers />
   </component>
