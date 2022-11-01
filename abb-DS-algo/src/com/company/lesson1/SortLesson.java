@@ -3,7 +3,7 @@ package com.company.lesson1;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class SortArray {
+public class SortLesson {
     //Big O notation
 
     /*sort algorithm
