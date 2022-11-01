@@ -8,10 +8,11 @@ public class SortArray {
     /*sort algorithm
      * the best complexity-->O(n)
      * the worst complexity-->O(n*n)
-     * 
+     *
      * */
 
 
+    //O(log n)
     public static void main(String[] args) {
         int[] arr = {34, 3, 23, 34, 5, 6, 3, 2, 1};
         Integer[] arr2 = {34, 3, 23, 34, 5, 6, 3, 2, 1};
