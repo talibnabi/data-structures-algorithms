@@ -12,7 +12,7 @@ public class SortArray {
      * */
 
 
-    //O(log n)
+    //O(log n)   O(nlog n)
     public static void main(String[] args) {
         int[] arr = {34, 3, 23, 34, 5, 6, 3, 2, 1};
         Integer[] arr2 = {34, 3, 23, 34, 5, 6, 3, 2, 1};
@@ -75,4 +75,28 @@ public class SortArray {
     //O(2) x=a[1]  y=a[7]
     //O(n+m) for(x:a)  for(y:b) a.length=n  b.length=m
 
+
+    //how to implement SORT O(n*log n)
+    /*whole complexity
+    1.divide in a halves : log n
+    2.merge  N-for every iteration
+    */
+
+    private static int[] merge(int[] data, int left, int middle, int right) {
+
+        throw new IllegalArgumentException("not implementation");
+    }
+
+    private static void split(int[] arr, int left, int right) {
+        if (left < right) {//still have a data
+            int middle = (left + right) / 2;
+            split(arr, left, right);
+            split(arr, left + 1, right);
+            merge(arr, left, middle, right);
+        }
+    }
+
+    private static void mergeSort(int[] arr) {
+        split(arr, 0, arr.length);
+    }
 }
