@@ -1,9 +1,16 @@
 package com.company.lesson1;
 
-
 import java.util.Arrays;
 
 public class SortArray {
+    //Big O notation
+
+    /*sort algorithm
+     * the best complexity-->O(n)
+     * the worst complexity-->O(n*n)
+     * 
+     * */
+
 
     public static void main(String[] args) {
         int[] arr = {34, 3, 23, 34, 5, 6, 3, 2, 1};
@@ -33,12 +40,14 @@ public class SortArray {
 
     //bubble sort
     private static Integer[] sort2(Integer[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+        //O(n*n*4)
+        for (int i = 0; i < arr.length; i++) {//O(n)
+            for (int j = i + 1; j < arr.length; j++) {//O(n)
+                if (arr[i] > arr[j]) {//O(1)
+                    int temp = arr[i];//O(1)
+                    arr[i] = arr[j];//O(1)
+                    arr[j] = temp;//O(1)
+                    /*O(3)*/
                 }
             }
         }
@@ -48,14 +57,21 @@ public class SortArray {
 
     //bubble sort
     private static Integer[] sort3(Integer[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {//O(n)
             if (arr[i] > arr[i + 1]) {
                 int temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
-                i=-1;
+                i = -1;
+                /*O(4)*/
             }
         }
         return arr;
     }
+
+    //O(1) x=a[i]
+    //O(n) for(x:a) a.length=n
+    //O(2) x=a[1]  y=a[7]
+    //O(n+m) for(x:a)  for(y:b) a.length=n  b.length=m
+
 }
