@@ -1,6 +1,7 @@
 package com.company.lesson1;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class SortArray {
     //Big O notation
@@ -98,5 +99,21 @@ public class SortArray {
 
     private static void mergeSort(int[] arr) {
         split(arr, 0, arr.length);
+    }
+
+    //we need somehow to provide functionality to compare
+    //this for cased we cannot modify our entities
+    private static <A> void sortWhatever(A[] data, Comparator<A> cmp) {
+        if (cmp.compare(data[1], data[2]) < 0) {
+
+        }
+    }
+
+    //this for cased we can modify our entities
+    private static <A extends Comparable<A>> void sortWhatever2(A[] data) {
+        if (data[1].compareTo(data[2]) < 0) {
+
+        }
+
     }
 }
